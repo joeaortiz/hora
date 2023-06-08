@@ -493,6 +493,14 @@ class AllegroHandHora(VecTask):
         self.enable_priv_obj_scale = p_config['enableObjScale']
         self.enable_priv_obj_com = p_config['enableObjCOM']
         self.enable_priv_obj_friction = p_config['enableObjFriction']
+        print('---- Privileged Info ----')
+        print(
+            f'Position: {self.enable_priv_obj_position}\n'
+            f'Mass: {self.enable_priv_obj_mass}\n'
+            f'Scale: {self.enable_priv_obj_scale}\n'
+            f'CoM: {self.enable_priv_obj_com}\n'
+            f'Friction: {self.enable_priv_obj_friction}'
+        )
 
     def _update_priv_buf(self, env_id, name, value, lower=None, upper=None):
         # normalize to -1, 1
