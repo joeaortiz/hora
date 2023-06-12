@@ -25,7 +25,7 @@ executor.update_parameters(
     # slurm_partition="local",
     nodes=1,
     gpus_per_node=8,
-    timeout_min=120,
+    timeout_min=450,
     name="hora_ablation",
 )
 
